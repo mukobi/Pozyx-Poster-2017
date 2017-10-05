@@ -33,7 +33,7 @@ html {
 
 /* document setup */
 body {
-  padding: 2in;
+  /*padding: 2in;*/
   background-color: rgba(0,0,25,0.8);
 }
 
@@ -184,4 +184,10 @@ body > .container > .content {
 
 .section.conclusions {
   margin-bottom: 0.1in;
+}
+
+@media print {
+* {
+    -webkit-print-color-adjust: exact;
+}
 }
