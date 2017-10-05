@@ -10,15 +10,31 @@ html {
   box-sizing: inherit;
   }
 
+/* general element syling */
+
 * {
   margin: 0;
   padding: 0;
-  background-color: rgba(0,100,255, 0.1);
+  /*background-color: rgba(0,100,255, 0.1);*/
   font-family: 'PT Sans', sans-serif;
+  text-align: justify;
 }
 
+.float-left {
+  float: left;
+  margin: 30px 30px 0 0;
+}
+
+.float-right {
+  float: right;
+  margin: 30px 0 0 30px;
+}
+
+
+/* document setup */
 body {
   padding: 2in;
+  background-color: rgba(0,0,25,0.8);
 }
 
 body > .container {
@@ -27,7 +43,10 @@ body > .container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  background-color: white;
 }
+
+/* header */
 
 body > .container > .header {
   flex-grow: 1;
@@ -39,11 +58,10 @@ body > .container > .header {
 }
 
 .header > img {
-  height: 5in;
+  height: 4.5in;
 }
 
 .header .header-words {
-  text-align: center;
   max-width: 75%;
 }
 
@@ -51,15 +69,17 @@ body > .container > .header {
   font-family: 'Montserrat', sans-serif;
   font-size: 100pt;
   display: block;
+  text-align: center;
 }
 
 .header .header-words .name {
   font-size: 80px;
   font-weight: bold;
+  text-align: center;
 }
 
 body > .container > .content {
-  flex-grow: 20;
+  flex-grow: 24;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -67,27 +87,24 @@ body > .container > .content {
 }
 
 .col-main {
-  padding: 1in;
+  padding: 0.25in;
   background-color: #6a7f10;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .col-main.left {
-  flex-grow: 3;
-  border: 1px solid red;
+  width: 30%;
 }
 
 .col-main.center {
   flex-grow: 5;
-  min-width: 45%;
-  border: 1px solid green;
+  width: 39%;
 }
 
 .col-main.right {
-  flex-grow: 3;
-  border: 1px solid blue;
+  width: 30%;
 }
 
 
@@ -95,6 +112,8 @@ body > .container > .content {
 .section {
   background-color: white;
   padding: 0.25in;
+  border: 10px solid #3e4b09;
+  border-radius: 10px;
 }
 
 .section-title {
@@ -103,4 +122,66 @@ body > .container > .content {
   text-align: center;
   display: block;
   width: auto;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 26pt;
+}
+
+.figure {
+  width: 100%;
+}
+
+.figure-holder {
+  border: 5px solid #3e4b09;
+}
+
+.figure-holder .label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* figures */
+.figure-holder-1 {
+  width: 650px;
+}
+
+.figure-holder-2 {
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.figure-holder-3 {
+  width: 760px;
+  margin-top: 0;
+}
+
+.figure-holder-4 {
+  width: 800px;
+}
+
+.figure-holder-5 {
+  width: 1212px;
+}
+.figure-holder-6 {
+  width: 675px;
+}
+
+/* spacing margins */
+.section.abstract {
+  margin-bottom: 0.1in;
+}
+
+.section.materials-and-methods-continued {
+  margin-bottom: 0.1in;
+}
+
+.section.discussion {
+  margin-bottom: 0.1in;
+}
+
+.section.conclusions {
+  margin-bottom: 0.1in;
 }
