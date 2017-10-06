@@ -33,8 +33,13 @@ html {
 
 /* document setup */
 body {
-  /*padding: 2in;*/
   background-color: rgba(0,0,25,0.8);
+}
+
+@media screen {
+  body {
+    padding: 2.5in;
+  }
 }
 
 body > .container {
