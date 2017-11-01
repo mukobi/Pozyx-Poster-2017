@@ -192,7 +192,10 @@ body > .container > .content {
 }
 
 @media print {
-* {
-    -webkit-print-color-adjust: exact;
-}
+  * {
+  }
+  @page {
+    size: 48in 36in;
+    margin: 0;
+  }
 }
