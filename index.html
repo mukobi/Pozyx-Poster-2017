@@ -34,7 +34,7 @@
 
             localized positioning system has yet to emerge dominant among many prototype localized positioning technologies.
 
-            We developed for a new localized positioning system that communicates over the ultra-wideband (UWB) radio spectrum in a way that provides high data rates (up to 100 Hz), positioning accuracy within 10 centimeters, and a small cost and setup. We successfully implemented and tested this positioning system with applications as a learning tool for hands-on college-level physics courses.
+            I developed for Pozyx, a new localized positioning system that communicates over the ultra-wideband (UWB) radio spectrum in a way that provides high data rates (up to 100 Hz), positioning accuracy within 10 centimeters, and a small cost and setup. I successfully implemented and tested this positioning system with applications as a learning tool for hands-on college-level physics courses.
           </div>
         </div>
         <div class="section materials-and-methods">
@@ -42,9 +42,9 @@
             Materials and Methods
           </div>
           <div class="section-text">
-            We conducted our research in a physics lab at Portland State University and sought to successfully implement a Pozyx UWB positioning system as a learning tool for hands-on college-level physics kinematics labs. This meant that the majority of our work was getting a firm grasp on the platform and its capabilities, catering the platform towards and designing software for a useful user experience, and designing physics labs that utilized the platform to its greatest capabilities.
+            I conducted my research in conjunction with a physics lab at a local university and sought to successfully implement a Pozyx UWB positioning system as a learning tool for hands-on college-level physics kinematics labs. This meant that the majority of my work was getting a firm grasp on the platform and its capabilities, catering the platform towards and designing software for a useful user experience, and designing physics labs that utilized the platform to its greatest capabilities.
             <br /><br />
-            Pozyx began as a Kickstarter fundraiser project by Pozyx Laboratories, then a four person team based in Ghent University, Belgium. Pozyx devices are categorized into tags—devices with the full functionality of UWB positioning as well as onboard accelerometers, gyroscopes, and other motion chips—and anchors—static devices lacking onboard motion sensor for use in establishing anchor points for a positioning system. We bought several sets of Pozyx devices (each device cost around $150 USD).
+            Pozyx began as a Kickstarter fundraiser project by Pozyx Laboratories, then a four person team based in Ghent University, Belgium. Pozyx devices are categorized into tags—devices with the full functionality of UWB positioning as well as onboard accelerometers, gyroscopes, and other motion chips—and anchors—static devices lacking onboard motion sensor for use in establishing anchor points for a positioning system. The university lab bought several sets of Pozyx devices (each device cost around $150 USD).
             <br /><br />
             Pozyx Labs provided Arduino and Python libraries for interfacing with the devices. Additionally, Pozyx Labs provided a basic framework of scripts capable of capturing data on the 1-dimensional range, the 3-dimensional position, or the gyroscopic, accelerometic, and other motion from sensors on one device. These scripts were extemely limited, only being capable of data collection directly from each device and console printing without much formatting.
             <div class="figure-holder figure-holder-2 float-right">
@@ -65,16 +65,16 @@
                 Figure 3: An early GUI prototype
               </div>
             </div>
-            We developed our educational applications by working the scripts into more robust programs. We provided an efficient data storage and parsing system, calculated velocity from the data streams, implemented an exponential moving average filter to low pass data, developed a standardized timestamp and console logging system, created an effective module for file writing data for later analysis, compiled code for multi-platform support, and combined the programs to enable collection of data from more than one device at a time or of motion data with either 1D or 3D data concurrently. We also developed a graphical user interface (GUI) with heavy abstraction of our system so end users could collect data without having to worry at all about code or errors.
+            I developed my educational applications by working the scripts into more robust programs. I provided an efficient data storage and parsing system, calculated velocity from the data streams, implemented an exponential moving average filter to low pass data, developed a standardized timestamp and console logging system, created an effective module for file writing data for later analysis, compiled code for multi-platform support, and combined the programs to enable collection of data from more than one device at a time or of motion data with either 1D or 3D data concurrently. I also developed a graphical user interface (GUI) with heavy abstraction of our system so end users could collect data without having to worry at all about code or errors.
             <br /><br />
-            We then moved on to designing college physics labs that would implement the new Pozyx system. These labs were primarily kinematics labs, learning experiences involving all aspects of motion including position, displacement, velocity, direction, and acceleration.
+            I then moved on to designing college physics labs that would implement the new Pozyx system. These labs were primarily kinematics labs, learning experiences involving all aspects of motion including position, displacement, velocity, direction, and acceleration.
             <br /><br />
-            We tested our system by re-engineering a common physics lab where students find the acceleration of carts on an inclined plane. Students push a cart up the inclined plane. The displacement of the cart is measured over time by collecting 1D range from between an anchor at the base of the inclined plane and a tag attached to the cart. <div class="figure-holder figure-holder-4 float-left">
+            One test of my system was re-engineering a common physics lab where students find the acceleration of carts on an inclined plane. Students push a cart up the inclined plane. The displacement of the cart is measured over time by collecting the 1D range between an anchor at the base of the inclined plane and a tag attached to the cart. <div class="figure-holder figure-holder-4 float-left">
               <img class="figure figure-4" src="images/figure4.jpg" />
               <div class="label label-4">
-                Figure 4: The materials involved in our inclined plane acceleration lab
+                Figure 4: The materials involved in my inclined plane acceleration lab
               </div>
-            </div>With this setup, students could measure the position of the cart along the track at a data rate of around 100 Hz using a Pozyx system.
+            </div>With this setup, theoretical students could measure the position of the cart along the track at a data rate of around 100 Hz using a Pozyx system.
             <br />
 
             <br />
@@ -86,8 +86,8 @@
             Results
           </div>
           <div class="section-text">
-            We tested this lab ourselves using an inclined plane with a slope of approximately 7.126457 degrees (the plane was propped up to a set height, then the slope was recorded which resulted in that unround number).
-            First, we calculated the theoretical acceleration by using the equation <i>F<sub>para</sub> = F<sub>g</sub> * sin(𝜃)</i>  ay where <i>F<sub>para</sub></i> is the theoretical acceleration we are solving for, <i>F<sub>g</sub></i> is the downward force of gravity, and <i>𝜃</i> is the incline of the inclined plane on which an object would slide down. For our test of 7.126457 degrees,
+            I tested this lab ourselves using an inclined plane with a slope of approximately 7.126457 degrees (the plane was propped up to a set height, then the slope was recorded which resulted in that unround number).
+            First, I calculated the theoretical acceleration by using the equation <i>F<sub>para</sub> = F<sub>g</sub> * sin(𝜃)</i>  ay where <i>F<sub>para</sub></i> is the theoretical acceleration we are solving for, <i>F<sub>g</sub></i> is the downward force of gravity, and <i>𝜃</i> is the incline of the inclined plane on which an object would slide down. For my test of 7.126457 degrees,
             <div class="figure-holder figure-holder-5 float-right">
               <img class="figure figure-5" src="images/figure5.JPG" />
               <div class="label label-5">
@@ -100,7 +100,7 @@
             F<sub>para</sub> = 1.21660 m/s/s</i>
             <br />
             <br />
-            We then sought to collect experimental displacement data from which we could derive acceleration. We pushed a cart up the incline measured at 7.126457 degrees, traveling for about 3.25 seconds from push to catch. In this time, we recorded approximately 200 data points of the displacement of the Pozyx tag on the cart. As can be seen from Figure 5, a parabolic trend can be described about the data. Taking into account the whole data set, we computed a parabolic trendline in the form <i>x = x<sub>0</sub> + v<sub>0</sub>t + ½at<sup>2</sup></i> found to be <i>x = -6.696 + 4.852t - 0.660t<sup>2</sup></i> where x is range in meters (the cart was first pushed starting around 2 seconds into data collection, as can be seen in Figure 5). We then differentiated this trendline twice in order to reach an average experimental acceleration value of <i>a = 1.220 m/s/s</i>.
+            I then sought to collect experimental displacement data from which I could derive acceleration. I pushed a cart up the incline measured at 7.126457 degrees, traveling for about 3.25 seconds from push to catch. In this time, I recorded approximately 200 data points of the displacement of the Pozyx tag on the cart. As can be seen from Figure 5, a parabolic trend can be described about the data. Taking into account the whole data set, we computed a parabolic trendline in the form <i>x = x<sub>0</sub> + v<sub>0</sub>t + ½at<sup>2</sup></i> found to be <i>x = -6.696 + 4.852t - 0.660t<sup>2</sup></i> where x is range in meters (the cart was first pushed starting around 2 seconds into data collection, as can be seen in Figure 5). We then differentiated this trendline twice in order to reach an average experimental acceleration value of <i>a = 1.220 m/s/s</i>.
           </div>
         </div>
       </div>
@@ -110,13 +110,13 @@
             Discussion
           </div>
           <div class="section-text">
-            We calculated the error of our lab experiment using the statistical percent equation and our theoretical and experimental acceleration values.
+            I calculated the error of my lab experiment using the statistical percent equation and our theoretical and experimental acceleration values.
             <br /><br />
             <i>error = |theoretical - experimental | / theoretical<br />
             error = |1.21660 - 1.220| / 1.21660<br />
             error = 0.279467%</i>
             <br /><br />
-            This error value was extremely small considering what we were expecting and very much within an acceptable margin for a high school or college level physics lab.
+            This error value was extremely small considering what I was expecting and very much within an acceptable margin for a high school or college level physics lab.
           </div>
         </div>
         <div class="section conclusions">
@@ -124,21 +124,21 @@
             Conclusions
           </div>
           <div class="section-text">
-            Our project was successful, and we accomplished all of the things that we set out to do. These included understanding, building upon, and optimizing the Pozyx platform created by Pozyx Laboratories, creating an easier to use, safer, and friendlier user experience suitable for the use of professors and students that may not with to have to go through a bunch of code, and designing a working physics lab which took advantage of the abilities of the Pozyx system to teach kinematics. While physics students might normally “eyeball” the position of a cart with video analysis, our system provides very accurate data with a minimal error and is a potentially radically easier and more effective way of teaching applied physics concepts.
+            My project was successful, and I accomplished all of the things that I set out to do. These included understanding, building upon, and optimizing the Pozyx platform created by Pozyx Laboratories, creating an easier to use, safer, and friendlier user experience suitable for the use of professors and students that may not with to have to go through a bunch of code, and designing a working physics lab which took advantage of the abilities of the Pozyx system to teach kinematics. While physics students might normally “eyeball” the position of a cart with video analysis, my system provides very accurate data with a minimal error and is a potentially radically easier and more effective way of teaching applied physics concepts.
             <br /><br />
-            The research was not without its challenges, however. Working to understand the framework of code for Pozyx, learning about the communication systems of the Pozyx devices, figuring out how to interface the Python data collection scripts with our Java GUI, learning about signal processing to clean up the data, and writing clear and effective code that avoided obfuscation were only some of the most prominent struggles of the project, but they were all eventually worked through.
+            The research was not without its challenges, however. Working to understand the framework of code for Pozyx, learning about the communication systems of the Pozyx devices, figuring out how to interface the Python data collection scripts with our Java GUI, learning about signal processing to clean up the data, creating cross-platform distributions, and writing clear and effective code that avoided obfuscation were only some of the many struggles of the project, but they were all eventually worked through.
             <br />
             <div class="figure-holder figure-holder-6 float-left">
               <img class="figure figure-6" src="images/figure6.JPG" />
               <div class="label label-6">
-                Figure 6: We are investigating professional sports applications
+                Figure 6: Me with the university team investigating professional sports applications
               </div>
             </div><br />
             Additionally, the lab design could still see some improvements, and there are many changes to its experimental process that would aid it greatly. Furthermore, it represents only a single application of the Pozyx positioning system, as unrepresented are data using the 3D positioning, the onboard accelerometers, gyroscopes, and other motion sensors, or positioning using more than one device at a time. These unexplored avenues and their combinations all represent vastly different applications.
             <br /><br />
-            Going forward, we aim to continue development on our physics teaching platform. Most notably, we wish to expand upon the graphical outputs of data collection using a 3D graphical application such as the Unity Game Engine, to refine the GUI into the most helpful tool that it can be, to add more data parsing programs such as automatic graph creators, to refine our lab designs, and to develop new lab designs focused around different kinematic concepts. We are also looking into partnering with professional sports team to use the system as a strategic and diagnostic motion reporting device during athlete performance.
+            Going forward, I aim to continue development on my physics teaching platform. Most notably, I to expand upon the graphical outputs of data collection using a 3D graphical application such as the Unity Game Engine, to refine the GUI into the most helpful tool that it can be, to add more data parsing programs such as automatic graph creators, to refine lab designs, and to develop new lab designs focused around different kinematic concepts. I am also looking into partnering with professional sports team to use the system as a strategic and diagnostic motion reporting device during athlete performance.
             <br /><br />
-            The Pozyx system certainly shows promise for being a simple but effective high-accuracy positioning device, and we are only continuing to develop new applications of the technology in physics, motion capturing, and other applications.
+            The Pozyx system certainly shows promise for being a simple but effective high-accuracy positioning device, and I am only continuing to develop new applications of the technology in physics, motion capturing, and other applications.
           </div>
         </div>
         <div class="section acknowledgements">
@@ -146,7 +146,7 @@
             Acknowledgements
           </div>
           <div class="section-text">
-            I would like to give special thanks to the others working on this project, Dr. Ralf Widenhorn, Dr. Tom Allen, Ms. Cora Siebert, and Mr. Glen Skahill. Also, thanks to the Camas MST Magnet staff for encouragement on the project and the research process.
+            I would like to give special thanks to the university team with whom I collaborated. All pictures taken by researcher.
           </div>
         </div>
       </div>
