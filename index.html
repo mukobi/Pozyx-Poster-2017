@@ -60,7 +60,7 @@
                 Figure 3: An early GUI prototype
               </div>
             </div>
-            I developed my educational applications by working the scripts into more robust programs. I provided an efficient data storage and parsing system, calculated velocity from the data streams, implemented an exponential moving average filter to low pass data, developed a standardized timestamp and console logging system, created an effective module for file writing data for later analysis, compiled code for multi-platform support, and combined the programs to enable collection of data from more than one device at a time or of motion data with either 1D or 3D data concurrently. I also developed a graphical user interface (GUI) with heavy abstraction of our system so end users could collect data without having to worry at all about code or errors.
+            I developed my educational applications by working the scripts into more robust programs. I provided an efficient data storage and parsing system, calculated velocity from the data streams, implemented an exponential moving average filter to low pass data, developed a standardized timestamp and console logging system, created an effective module for file writing data for later analysis, compiled code for multi-platform support, and combined the programs to enable collection of data from more than one device at a time or of motion data with either 1D or 3D data concurrently. I also developed a graphical user interface (GUI) with heavy abstraction of my system so end users could collect data without having to worry at all about code or errors.
             <br /><br />
             I then moved on to designing college physics labs that would implement the new Pozyx system. These labs were primarily kinematics labs, learning experiences involving all aspects of motion including position, displacement, velocity, direction, and acceleration.
             <br /><br />
@@ -82,7 +82,7 @@
           </div>
           <div class="section-text">
             I tested this lab ourselves using an inclined plane with a slope of approximately 7.126457 degrees (the plane was propped up to a set height, then the slope was recorded which resulted in that unround number).
-            First, I calculated the theoretical acceleration by using the equation <i>F<sub>para</sub> = F<sub>g</sub> * sin(𝜃)</i>  ay where <i>F<sub>para</sub></i> is the theoretical acceleration we are solving for, <i>F<sub>g</sub></i> is the downward force of gravity, and <i>𝜃</i> is the incline of the inclined plane on which an object would slide down. For my test of 7.126457 degrees,
+            First, I calculated the theoretical acceleration by using the equation <i>F<sub>para</sub> = F<sub>g</sub> * sin(𝜃)</i>  ay where <i>F<sub>para</sub></i> is the theoretical acceleration I am solving for, <i>F<sub>g</sub></i> is the downward force of gravity, and <i>𝜃</i> is the incline of the inclined plane on which an object would slide down. For my test of 7.126457 degrees,
             <div class="figure-holder figure-holder-5 float-right">
               <img class="figure figure-5" src="images/figure5.JPG" />
               <div class="label label-5">
@@ -95,7 +95,7 @@
             F<sub>para</sub> = 1.21660 m/s/s</i>
             <br />
             <br />
-            I then sought to collect experimental displacement data from which I could derive acceleration. I pushed a cart up the incline measured at 7.126457 degrees, traveling for about 3.25 seconds from push to catch. In this time, I recorded approximately 200 data points of the displacement of the Pozyx tag on the cart. As can be seen from Figure 5, a parabolic trend can be described about the data. Taking into account the whole data set, we computed a parabolic trendline in the form <i>x = x<sub>0</sub> + v<sub>0</sub>t + ½at<sup>2</sup></i> found to be <i>x = -6.696 + 4.852t - 0.660t<sup>2</sup></i> where x is range in meters (the cart was first pushed starting around 2 seconds into data collection, as can be seen in Figure 5). We then differentiated this trendline twice in order to reach an average experimental acceleration value of <i>a = 1.220 m/s/s</i>.
+            I then sought to collect experimental displacement data from which I could derive acceleration. I pushed a cart up the incline measured at 7.126457 degrees, traveling for about 3.25 seconds from push to catch. In this time, I recorded approximately 200 data points of the displacement of the Pozyx tag on the cart. As can be seen from Figure 5, a parabolic trend can be described about the data. Taking into account the whole data set, I computed a parabolic trendline in the form <i>x = x<sub>0</sub> + v<sub>0</sub>t + ½at<sup>2</sup></i> found to be <i>x = -6.696 + 4.852t - 0.660t<sup>2</sup></i> where x is range in meters (the cart was first pushed starting around 2 seconds into data collection, as can be seen in Figure 5). I then differentiated this trendline twice in order to reach an average experimental acceleration value of <i>a = 1.220 m/s/s</i>.
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
             Discussion
           </div>
           <div class="section-text">
-            I calculated the error of my lab experiment using the statistical percent equation and our theoretical and experimental acceleration values.
+            I calculated the error of my lab experiment using the statistical percent equation and my theoretical and experimental acceleration values.
             <br /><br />
             <i>error = |theoretical - experimental | / theoretical<br />
             error = |1.21660 - 1.220| / 1.21660<br />
@@ -121,7 +121,7 @@
           <div class="section-text">
             My project was successful, and I accomplished all of the things that I set out to do. These included understanding, building upon, and optimizing the Pozyx platform created by Pozyx Laboratories, creating an easier to use, safer, and friendlier user experience suitable for the use of professors and students that may not with to have to go through a bunch of code, and designing a working physics lab which took advantage of the abilities of the Pozyx system to teach kinematics. While physics students might normally “eyeball” the position of a cart with video analysis, my system provides very accurate data with a minimal error and is a potentially radically easier and more effective way of teaching applied physics concepts.
             <br /><br />
-            The research was not without its challenges, however. Working to understand the framework of code for Pozyx, learning about the communication systems of the Pozyx devices, figuring out how to interface the Python data collection scripts with our Java GUI, learning about signal processing to clean up the data, creating cross-platform distributions, and writing clear and effective code that avoided obfuscation were only some of the many struggles of the project, but they were all eventually worked through.
+            The research was not without its challenges, however. Working to understand the framework of code for Pozyx, learning about the communication systems of the Pozyx devices, figuring out how to interface the Python data collection scripts with my Java GUI, learning about signal processing to clean up the data, creating cross-platform distributions, and writing clear and effective code that avoided obfuscation were only some of the many struggles of the project, but they were all eventually worked through.
             <br />
             <div class="figure-holder figure-holder-6 float-left">
               <img class="figure figure-6" src="images/figure6.JPG" />
