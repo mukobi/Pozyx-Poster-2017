@@ -60,6 +60,8 @@ body > .container > .header {
   flex-wrap: nowrap;
   align-items: center;
   padding: 0 1in;
+  z-index: 3;
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.8);
 }
 
 .header > img {
@@ -75,6 +77,11 @@ body > .container > .header {
   font-size: 100pt;
   display: block;
   text-align: center;
+  /* gradient */
+  background-image: linear-gradient(to left, rgb(4, 104, 4), rgb(11, 20, 100));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .header .header-words .name {
@@ -90,8 +97,7 @@ body > .container > .content {
   justify-content: center;
   align-items: stretch;
   padding: 30px 0;
-  
-  background-color: #6a7f10;
+  background: linear-gradient(to bottom right, rgb(25, 197, 25), rgb(3, 20, 173));
 }
 
 .col-main {
@@ -119,8 +125,9 @@ body > .container > .content {
 .section {
   background-color: white;
   padding: 0.25in;
-  border: 10px solid #3e4b09;
-  border-radius: 10px;
+  border: 10px solid #053a5e;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.6);
 }
 
 .section-title {
